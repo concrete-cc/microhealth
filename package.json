@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "Simple health check for microservices",
   "main": "index.js",
-  "author": "Concrete Media Limited (concrete.cc)",
+  "author": {
+    "name": "Concrete Media Limited",
+    "url": "http://concrete.cc",
+    "email": "infrastructure@concreteplatform.com"
+  },
   "license": "MIT",
   "repository": {
     "type" : "git",
