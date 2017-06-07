@@ -1,4 +1,4 @@
-const health = require('./health')
+const health = require('.')
 const passingCheck = () => new Promise((resolve, reject) => resolve())
 const failingCheck = () => new Promise((resolve, reject) => reject())
 
