@@ -22,8 +22,8 @@ describe('Health check', () => {
     return expect(health.check()).rejects.toBeUndefined()
   })
   it('should respond to connect/express request correctly', () => {
-    const passRes = new mockRes()
-    const failRes = new mockRes()
+    const passRes = mockRes()
+    const failRes = mockRes()
 
     health.register(passingCheck)
     health.route(jest.fn(), passRes)

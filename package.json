@@ -8,19 +8,19 @@
     "url": "http://concrete.cc",
     "email": "infrastructure@concreteplatform.com"
   },
-  "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/concrete.cc/microhealth.git"
+    "type": "git",
+    "url": "https://github.com/concrete.cc/microhealth.git"
   },
   "bugs": {
-    "url" : "https://github.com/concrete-cc/microhealth/issues"
+    "url": "https://github.com/concrete-cc/microhealth/issues"
   },
   "scripts": {
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "jest-mock-express": "^0.1.0"
   },
   "licence": "MIT"
 }
