@@ -39,4 +39,10 @@ describe('Health check', () => {
       expect(failRes.send).toHaveBeenCalled()
     })
   })
+  it('should return list of checks', () => {
+    const initialCount = health.getChecks().length
+    health.register(passingCheck)
+    health.register(passingCheck)
+    expect(health.getChecks()).toHaveLength(initialCount + 2)
+  })
 })
