@@ -1,6 +1,6 @@
 {
   "name": "microhealth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple health check for microservices",
   "main": "index.js",
   "author": {
