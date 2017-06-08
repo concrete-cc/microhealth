@@ -45,4 +45,11 @@ describe('Health check', () => {
     health.register(passingCheck)
     expect(health.getChecks()).toHaveLength(initialCount + 2)
   })
+  it('should return reset checks', () => {
+    const initialCount = health.getChecks().length
+    health.register(passingCheck)
+    health.register(passingCheck)
+    health.reset()
+    expect(health.getChecks()).toHaveLength(initialCount)
+  })
 })
