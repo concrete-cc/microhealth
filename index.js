@@ -13,7 +13,7 @@ function check() {
   return Promise.all(checks.map(cb => cb()))
 }
 function route(req, res) {
-  check()
+  return check()
     .then(() => res.status(200).send())
     .catch(() => res.status(500).send())
 }
